@@ -1,0 +1,152 @@
+╔══════════════════════════════════════════════════════════════════╗
+║           🏠 DISCORD HOUSEHOLD BOT - QUICK REFERENCE            ║
+╚══════════════════════════════════════════════════════════════════╝
+
+┌─ COMMANDS ────────────────────────────────────────────────────────┐
+
+📅 EVENTS
+  /event create          → Create household event
+  /event list            → View upcoming events
+
+🍳 COOKING (AI-Enhanced)
+  /cooking schedule      → Schedule meal with AI recipe
+  /cooking quick         → Quick add with AI ingredients
+  /cooking view          → View cooking schedule
+  /cooking view <id>     → See full recipe
+
+✅ TODO (AI-Enhanced)  
+  /todo add              → Add task (form)
+  /todo quick <text>     → Quick add with AI parsing
+  /todo list [filter]    → View tasks (pending/completed/all)
+  /todo complete <id>    → Mark task complete
+  /todo delete <id>      → Remove task
+
+📊 PLANNER (AI-Enhanced)
+  /plan day [date]       → AI-optimized daily schedule
+  /plan view [date]      → View your schedule
+
+⚙️  SETTINGS
+  /settings help         → Show all commands
+
+└───────────────────────────────────────────────────────────────────┘
+
+┌─ AI FEATURES (Optional) ──────────────────────────────────────────┐
+
+🤖 RECIPE GENERATION
+   Input: "Chicken Tikka Masala"
+   Output: Full recipe with ingredients & instructions
+
+🤖 TASK PARSING
+   Input: "buy milk tomorrow, 15 min, urgent"
+   Output: Structured task with due date, time, priority
+
+🤖 SCHEDULE OPTIMIZATION
+   Input: Your pending tasks
+   Output: Optimized daily plan with reasoning
+
+Cost: ~$0.70/month | Works great without AI too!
+
+└───────────────────────────────────────────────────────────────────┘
+
+┌─ QUICK SETUP ─────────────────────────────────────────────────────┐
+
+1. Get Discord bot token:
+   discord.com/developers → New App → Bot → Copy Token
+
+2. Create .env file:
+   DISCORD_BOT_TOKEN=your_token_here
+   ANTHROPIC_API_KEY=your_key_here  # Optional
+
+3. Install & Run:
+   pip install -r requirements.txt --break-system-packages
+   python3 main.py
+
+4. Test in Discord:
+   /settings help
+
+└───────────────────────────────────────────────────────────────────┘
+
+┌─ WISPBYTE DEPLOYMENT ─────────────────────────────────────────────┐
+
+1. Upload all files to Wispbyte server
+2. Create .env with your bot token
+3. Set startup: python3 main.py
+4. Start server → Bot goes online!
+
+Resources: 10-50MB disk, ~150MB RAM (well within limits)
+
+└───────────────────────────────────────────────────────────────────┘
+
+┌─ EXAMPLES ────────────────────────────────────────────────────────┐
+
+Create Event:
+  /event create
+  → Fill form: "Movie Night", "2024-11-25", "19:00"
+  → Everyone gets 24h & 1h reminders!
+
+Quick Cooking:
+  /cooking quick dish:Spaghetti Carbonara meal:Dinner
+  → AI generates full recipe instantly
+
+Natural Todo:
+  /todo quick clean bathroom tomorrow morning, 30 min, important
+  → AI parses: Due 2024-11-21, 30min, 4★, category:chore
+
+AI Planning:
+  /plan day
+  → AI schedules your top 10 tasks optimally
+
+└───────────────────────────────────────────────────────────────────┘
+
+┌─ FILES INCLUDED ──────────────────────────────────────────────────┐
+
+📄 README.md            - Complete documentation
+📄 SETUP.md             - Beginner setup guide  
+📄 AI_FEATURES.md       - AI capabilities explained
+📄 PROJECT_SUMMARY.md   - Overview & features
+📄 QUICK_REFERENCE.txt  - This file!
+
+🤖 main.py              - Bot initialization
+🤖 database.py          - SQLite operations
+🤖 requirements.txt     - Dependencies
+
+📁 cogs/                - Command modules
+📁 utils/               - AI & scheduler
+
+└───────────────────────────────────────────────────────────────────┘
+
+┌─ TROUBLESHOOTING ─────────────────────────────────────────────────┐
+
+Commands not showing?
+  → Wait 5-10 minutes for Discord to sync
+  → Reinvite bot with proper permissions
+
+Bot not responding?
+  → Check .env has correct DISCORD_BOT_TOKEN
+  → Verify bot is online in Discord
+  → Check Wispbyte server logs
+
+AI features not working?
+  → Add ANTHROPIC_API_KEY to .env
+  → Bot works fine without AI (uses fallbacks)
+
+Reminders not sending?
+  → Users must allow DMs from server
+  → Check bot is running continuously
+
+└───────────────────────────────────────────────────────────────────┘
+
+┌─ USEFUL LINKS ────────────────────────────────────────────────────┐
+
+Discord Developer Portal: https://discord.com/developers
+Anthropic Console:        https://console.anthropic.com
+Wispbyte Hosting:         https://wispbyte.com
+
+└───────────────────────────────────────────────────────────────────┘
+
+💡 TIP: Start without AI to learn the bot, add API key later!
+
+📚 For detailed info, see README.md or SETUP.md
+
+🎯 Ready? Extract the files and check SETUP.md to begin!
+
